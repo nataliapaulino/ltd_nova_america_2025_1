@@ -20,12 +20,12 @@ export function SideBarLayout({ type }: SideBarLayoutProps) {
       {(type === "admin" || type === "professor") && (
         <>
           <SideBarItem title="Usuário">
-            <SideBarAction of="NÃO IMPLEMENTADO" />
+            <SideBarAction href="#" of="NÃO IMPLEMENTADO" />
           </SideBarItem>
           <Divider />
 
           <SideBarItem title="Turma">
-            <SideBarAction of="NÃO IMPLEMENTADO" />
+            <SideBarAction href="#" of="NÃO IMPLEMENTADO" />
           </SideBarItem>
           <Divider />
         </>
@@ -34,7 +34,7 @@ export function SideBarLayout({ type }: SideBarLayoutProps) {
       {type === "admin" && (
         <>
           <SideBarItem title="Unidade">
-            <SideBarAction of="NÃO IMPLEMENTADO" />
+            <SideBarAction href="#" of="NÃO IMPLEMENTADO" />
           </SideBarItem>
           <Divider />
         </>
