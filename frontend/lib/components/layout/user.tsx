@@ -11,7 +11,7 @@ export function UserLayout({ type, children }: PropsWithChildren<UserLayoutProps
     <div className="flex flex-row gap-x-2">
       <SideBarLayout type={type} />
 
-      <main>
+      <main className="flex-1 pt-1">
         {children}
       </main>
     </div>
