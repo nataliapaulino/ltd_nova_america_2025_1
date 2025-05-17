@@ -34,7 +34,8 @@ export function SideBarLayout({ type }: SideBarLayoutProps) {
       {type === "admin" && (
         <>
           <SideBarItem title="Unidade">
-            <SideBarAction href="#" of="NÃO IMPLEMENTADO" />
+            <SideBarAction href={`${type}/unit/create`} of="Cadastrar" />
+            <SideBarAction href={`${type}/unit/view`} of="Consultar" />
           </SideBarItem>
           <Divider />
         </>

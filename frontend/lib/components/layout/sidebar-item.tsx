@@ -9,7 +9,7 @@ export function SideBarItem({ className, children, title, ...props }: SideBarIte
   return (
     <div className={twMerge(`space-y-1`, className)} {...props}>
       <SidebarTitle href="#" title={title} />
-      <div className="pl-10 space-y-1">
+      <div className="pl-10 flex flex-col items-start gap-y-1">
         {children}
       </div>
     </div>
