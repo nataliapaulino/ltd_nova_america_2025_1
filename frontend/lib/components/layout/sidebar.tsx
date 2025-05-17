@@ -1,6 +1,8 @@
 import { UserType } from "@/lib/schemas/user-type";
 import { Divider } from "../divider";
 import { SidebarTitle } from "./sidebar-title";
+import { SideBarItem } from "./sidebar-item";
+import { SideBarAction } from "./sidebar-action";
 
 type SideBarLayoutProps = {
   type: UserType
@@ -12,35 +14,23 @@ export function SideBarLayout({ type }: SideBarLayoutProps) {
     <section id="sidebar" className="bg-gray-300 px-2 space-y-2 h-full py-2 text-lg">
       {(type === "admin" || type === "professor") && (
         <>
-          <div id="user" className="space-y-1">
-            <SidebarTitle href="#" title="Usuário" />
-            <div className="pl-10 space-y-1">
-              <h2>NÃO IMPLEMENTADO</h2>
-            </div>
-          </div>
-
+          <SideBarItem title="Usuário">
+            <SideBarAction of="NÃO IMPLEMENTADO" />
+          </SideBarItem>
           <Divider />
 
-          <div id="class" className="space-y-1">
-            <SidebarTitle href="#" title="Turma" />
-            <div className="pl-10 space-y-1">
-              <h2>NÃO IMPLEMENTADO</h2>
-            </div>
-          </div>
-
+          <SideBarItem title="Turma">
+            <SideBarAction of="NÃO IMPLEMENTADO" />
+          </SideBarItem>
           <Divider />
         </>
       )}
 
       {type === "admin" && (
         <>
-          <div id="unit" className="space-y-1">
-            <SidebarTitle href="#" title="Unidade" />
-            <div className="pl-10 space-y-1">
-              <h2>NÃO IMPLEMENTADO</h2>
-            </div>
-          </div>
-
+          <SideBarItem title="Unidade">
+            <SideBarAction of="NÃO IMPLEMENTADO" />
+          </SideBarItem>
           <Divider />
         </>
       )}
