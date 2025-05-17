@@ -1,4 +1,4 @@
-import { UserLayout } from "@/lib/components/user-layout";
+import { UserLayout } from "@/lib/components/layout/user";
 import { PropsWithChildren } from "react";
 
 export default function AdminLayout({ children }: PropsWithChildren) {
